@@ -1,0 +1,474 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css");
+.hidden {
+  display: none;
+}
+div#result div ul {
+  display: block;
+  max-height: 50vh;
+  overflow-y: scroll;
+  width: 100%;
+  color: #3d3d3d;
+  padding-left: 0;
+}
+.no_anunciantes {
+  border: 1px solid #e1e1e1;
+  margin: 5px;
+  padding: 5px;
+  background-color: #fafafa;
+  border-radius: 8px;
+}
+div#result .cat-item {
+  font-size: 12px !important;
+}
+
+.centrosEducativos .filterContainer > div.mapContainer {
+  height: 40em;
+  width: 60%;
+  margin-bottom: 90px;
+  -webkit-transition: all 1s ease-out;
+  transition: all 1s ease-out;
+  height: auto;
+  position: relative;
+  margin-left: 0 !important;
+  left: 0;
+}
+
+.anunciante h2.card-title {
+  font-size: 1.3rem;
+  font-weight: 900;
+}
+.anunciante h3.card-title {
+  font-size: 1rem;
+}
+
+.parent {
+  position: relative;
+}
+#linkanuniantes {
+  color: #fff !important;
+  text-decoration: none !important;
+  font-size: 13px !important;
+  font-stretch: extra-condensed;
+  padding-top: 0;
+  line-height: 105%;
+  position: relative;
+}
+#logoacep {
+  height: 30px;
+  width: 40px;
+  position: absolute;
+  bottom: 30.5px;
+  right: 20.5px;
+  padding: 0;
+  z-index: 1;
+  background-color: #fff;
+  border-radius: 6px;
+}
+.nombrecentro {
+  background-color: #2a54a8;
+  padding: 3px;
+  height: 29px;
+  text-align: -webkit-center;
+  text-align: center;
+  font-weight: 600;
+  margin-top: -5px;
+}
+.botom {
+  margin-bottom: 5px;
+}
+.padding {
+  margin-top: -9px;
+  padding-left: 8px;
+}
+
+.titulocentros {
+  font-size: 12px;
+  margin-top: 5px;
+  font-weight: 900;
+  margin-left: 2px;
+}
+.direccion,
+.email {
+  font-size: 0.8rem;
+}
+.logo_centro {
+  object-fit: contain;
+  min-height: 150px;
+  max-height: 150px;
+}
+.niveles {
+  font-size: 12px;
+  font-stretch: condensed;
+  padding-top: 0;
+  line-height: 150%;
+}
+.top {
+  margin-top: -10px;
+}
+.anunciante .card-body {
+  padding: 1rem;
+}
+.acep {
+  position: absolute;
+}
+.datos {
+  background-color: #54aa00;
+  color: #fff;
+  border-radius: 0 0 8px 8px;
+  position: absolute;
+  bottom: 6px;
+  z-index: 0;
+  height: 40%;
+  width: 100%;
+}
+.volvermapa {
+  font-size: x-large;
+}
+.datos a {
+  color: #fff;
+}
+
+.publicidad {
+  float: right;
+  width: 40%;
+  position: relative;
+  top: 10px;
+  text-align: left;
+}
+.resaltado {
+  font-weight: 900;
+  font-size: 30px;
+}
+.boton {
+  text-shadow: 0 1px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  text-decoration: none;
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+  display: inline-block;
+  color: #fff !important;
+  background: #7f8c8d;
+  padding: 7px 20px;
+  white-space: nowrap;
+  border-radius: 100px;
+  margin: 10px 5px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+.azul {
+  background: #3662ba;
+  -webkit-box-shadow: 0 5px 0 0 #2980b9;
+  box-shadow: 0 5px 0 0 #2980b9;
+}
+.azul:hover {
+  background: #39a0e5;
+}
+.azul:active {
+  -webkit-box-shadow: 0 2px 0 0 #2980b9;
+  box-shadow: 0 2px 0 0 #2980b9;
+}
+.verde {
+  background: #6acb0a;
+  -webkit-box-shadow: 0 5px 0 0 #27ae60;
+  box-shadow: 0 5px 0 0 #27ae60;
+}
+.verde:hover {
+  background: #32db78;
+}
+.verde:active {
+  -webkit-box-shadow: 0 2px 0 0 #27ae60;
+  box-shadow: 0 2px 0 0 #27ae60;
+}
+.rojo {
+  background: #e74c3c;
+  -webkit-box-shadow: 0 5px 0 0 #c0392b;
+  box-shadow: 0 5px 0 0 #c0392b;
+}
+.rojo:hover {
+  background: #ff5242;
+}
+.rojo:active {
+  -webkit-box-shadow: 0 2px 0 0 #c0392b;
+  box-shadow: 0 2px 0 0 #c0392b;
+}
+.centrosEducativos ul {
+  list-style-type: none !important;
+}
+.registre {
+  padding: 0 0 50px 0;
+}
+.centrosEducativos li {
+  -webkit-transition: box-shadow 0.5s ease;
+  -webkit-transition: -webkit-box-shadow 0.5s ease;
+  transition: -webkit-box-shadow 0.5s ease;
+  transition: box-shadow 0.5s ease;
+  transition: box-shadow 0.5s ease, -webkit-box-shadow 0.5s ease;
+}
+.centrosEducativos li:hover {
+  -webkit-box-shadow: 0 0 7px rgba(255, 255, 255, 0.9);
+  box-shadow: 0 0 7px rgba(255, 255, 255, 0.9);
+  background-color: #7bff98;
+}
+.centrosEducativos a {
+  text-decoration: none !important;
+}
+
+.centrosEducativos .filterContainer {
+  position: relative;
+}
+.centrosEducativos .filterContainer h4 {
+  font-size: 1.75rem;
+  color: #000;
+}
+.centrosEducativos .filterContainer > div {
+  float: left;
+}
+.centrosEducativos .filterContainer > div.mapContainer .map .provincia {
+  cursor: pointer;
+}
+.centrosEducativos .filterContainer > div.mapContainer .mobileProvincias {
+  opacity: 0;
+  position: absolute;
+  z-index: 10;
+}
+.centrosEducativos .filterContainer > div.result {
+  padding: 1% 1.5%;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 1s ease-out;
+  transition: all 1s ease-out;
+  background-color: #eeeeee;
+}
+.centrosEducativos .filterContainer > div.result h3 {
+  font-size: 2.25em;
+  color: #f1c416;
+  font-weight: 600;
+  margin-bottom: 0.5em;
+  text-transform: capitalize;
+}
+
+.centrosEducativos .filterContainer > div.result ul li a {
+  font-family: "nexa_lightregular", sans-serif;
+  font-size: 1.25em;
+  color: #3d3d3d;
+}
+.centrosEducativos .filterContainer > div.result ul li a:hover {
+  text-decoration: underline;
+}
+.centrosEducativos .filterContainer > div.result .sanjose {
+  display: none;
+}
+.centrosEducativos .category {
+  margin-top: 5.8em;
+}
+
+@media only screen and (device-width: 768px) and (device-height: 1024px) {
+  .mapa-header .text-left,
+  .mapa-header .text-right {
+    text-align: center;
+    padding-left: 0 !important;
+  }
+  .centrosEducativos .filterContainer > div.result {
+    max-width: 100%;
+    display: contents;
+    top: 0;
+  }
+  .centrosEducativos .filterContainer > div.mapContainer {
+    max-width: 100%;
+    display: contents;
+    top: 0;
+  }
+}
+@media only screen and (device-width: 320px) and (device-height: 480px) {
+  .mapa-header .text-left,
+  .mapa-header .text-right {
+    text-align: center;
+    padding-left: 0 !important;
+  }
+  .centrosEducativos .filterContainer > div.result {
+    max-width: 100%;
+    display: contents;
+    top: 0;
+  }
+  .centrosEducativos .filterContainer > div.mapContainer {
+    max-width: 100%;
+    display: contents;
+    top: 0;
+  }
+}
+@media screen and (min-width: 0) and (max-width: 640px) {
+  .centrosEducativos {
+    padding: 0.3125em 0;
+  }
+  .centrosEducativos .filterContainer {
+    position: relative;
+  }
+  .centrosEducativos .filterContainer h4 {
+    font-size: 1.75rem;
+    color: #3d3d3d;
+    margin-bottom: 1.5em;
+  }
+  .centrosEducativos .filterContainer h4 span {
+    display: none;
+  }
+  .centrosEducativos .filterContainer > div {
+    float: left;
+  }
+  .centrosEducativos .filterContainer > div.mapContainer .map {
+    display: none;
+    width: 100%;
+    height: 100%;
+  }
+  .centrosEducativos .filterContainer > div.mapContainer .map .provincia {
+    cursor: pointer;
+  }
+  .centrosEducativos .filterContainer > div.mapContainer .mobileProvincias {
+    opacity: 1;
+    position: relative;
+    margin-bottom: 3em;
+    z-index: 12;
+    display: block;
+    -webkit-transition: all 1s ease-out;
+    transition: all 1s ease-out;
+  }
+  .centrosEducativos .filterContainer > div.mapContainer .mobileProvincias a {
+    width: 100%;
+    padding: 0.5em 0;
+    text-align: center;
+    font-size: 1.25em;
+    color: white;
+    font-family: "Quicksand", sans-serif;
+    background-color: #3b3c3d;
+    display: block;
+    border-radius: 2px;
+    margin-bottom: 0.5em;
+  }
+  .centrosEducativos .filterContainer > div.result {
+    width: 40%;
+    padding-left: 3%;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transition: all 1s ease-out;
+    transition: all 1s ease-out;
+    position: absolute !important;
+    opacity: 0;
+    right: 0;
+    z-index: 11;
+    display: inline-block;
+    top: 29%;
+    float: right;
+  }
+  .centrosEducativos .filterContainer > div.result h3 {
+    font-size: 1.3em;
+    color: #f1c416;
+    font-weight: 600;
+    margin-bottom: 0.5em;
+  }
+  .centrosEducativos .filterContainer > div.result ul {
+    list-style: disc;
+    color: #3d3d3d;
+    list-style-position: inside;
+  }
+  .centrosEducativos .filterContainer > div.result ul li {
+    color: #3d3d3d;
+    margin-bottom: 0.8em;
+  }
+  .centrosEducativos .filterContainer > div.result ul li a {
+    font-family: "nexa_lightregular", sans-serif;
+    font-size: 0.9em;
+    color: #3d3d3d;
+  }
+  .centrosEducativos .filterContainer > div.result ul li a:hover {
+    text-decoration: underline;
+  }
+  .centrosEducativos .filterContainer > div.result .sanjose {
+    display: none;
+  }
+  .centrosEducativos .category {
+    margin-top: 1em;
+  }
+  .centrosPrivados {
+    padding: 3em 0 2em;
+  }
+  .centrosPrivados .centers hr {
+    width: 25%;
+    background: #537a84;
+    margin: 2.8em auto 2.8em;
+    height: 1px;
+  }
+  .centrosPrivados .centers h3 {
+    font-size: 1.3em;
+  }
+  .centrosPrivados .centers > div {
+    height: 323px;
+    background-size: 200%;
+    background-attachment: scroll;
+  }
+  .centrosPrivados .centers > div .centerContent {
+    width: 100%;
+    padding: 1.325em 0;
+  }
+  .centrosPrivados .centers > div .centerContent .wrapper figure {
+    text-align: center;
+    width: 22%;
+    float: none;
+    margin: 0 auto;
+    padding-top: 1em;
+  }
+  .centrosPrivados .centers > div .centerContent .wrapper div {
+    width: 100%;
+    float: none;
+    font-size: 1em;
+  }
+  .centrosPrivados .centers > div .centerContent .wrapper div h5 {
+    font-size: 1.2em;
+    margin-top: 0.7em;
+  }
+  .centrosPrivados .centers > div .centerContent .wrapper div p:nth-child(4) {
+    padding-top: 0.4em;
+  }
+  .centrosPrivados .centers > div .centerContent .wrapper div a {
+    font-size: 0.9em;
+  }
+  .centrosPrivados .volver {
+    margin-top: 2.5em;
+  }
+  .centrosPrivados .volver a {
+    font-size: 1.1em;
+  }
+  .centrosPrivados .volver a:first-child {
+    display: none;
+  }
+  .centrosPrivados .volver a:last-child {
+    display: block;
+  }
+}
+@media only screen and (min-device-width: 320px) and (max-device-width: 767px) and (min-width: 320px) and (max-width: 767px) {
+  .mapa-header .text-left,
+  .mapa-header .text-right {
+    text-align: center;
+    padding-left: 0 !important;
+  }
+  .centrosEducativos .filterContainer > div.result {
+    max-width: 100%;
+    display: contents;
+    top: 0;
+  }
+  .centrosEducativos .filterContainer > div.mapContainer {
+    max-width: 100%;
+    display: contents;
+    top: 0;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .centrosEducativos .filterContainer > div.result {
+    max-width: 100%;
+    display: contents;
+    top: 0;
+  }
+  .centrosEducativos .filterContainer > div.mapContainer {
+    max-width: 100%;
+    display: contents;
+    top: 0;
+  }
+}
