@@ -12,7 +12,7 @@ echo '<div class="col-xs-12 col-sm-12 col-md-6 col-lg-3 mb-2 text-center">
 $image = get_field('logo_centro');  //if(get_field('anunciante')== true){
 	echo  	'<div class="card-img-top mt-1"><img class="logo_centro"  src="'. $imgDestacada .'"/></div>';
 	echo 	'<div class="card-body mt-0 pt-1">';
-			echo 	'<h2 class="card-title"><a href="'. get_the_permalink($post->ID).'"">'.$title.'</a></h2>';
+			echo 	'<h2 class="card-title"><a id="centro-'.$title.'"  href="'. get_the_permalink($post->ID).'"">'.$title.'</a></h2>';
 					if(get_field('niveles_centro')){
 						echo '<h3 class="card-title">'.get_field('niveles_centro').'</h3>';
 					}
@@ -21,15 +21,18 @@ $image = get_field('logo_centro');  //if(get_field('anunciante')== true){
 					}
 					// if(get_field('anunciante')==true){
 					if(get_field('telefono')){
-						echo '<p class="tel"><a class="bi bi-telephone-fill" href="tel:'.get_field('telefono').'"> '.get_field('telefono').'</a></p>';
+						echo '<p class="tel"><a class="bi bi-telephone-fill" id="tel_'.$title.'" target="_blank" href="tel:'.get_field('telefono').'"> '.get_field('telefono').'</a></p>';
+							}
+					if(get_field('whatsapp')){
+						echo '<p class="tel"><a class="bi bi-whatsapp" id="whatsapp_'.$title.'" target="_blank" href="https://api.whatsapp.com/send?phone=506'.get_field('whatsapp').'&text=Hola%2C%20vi%20el%20anuncio%20en%20Actualidad%20Educativa%20y%20quiero%20mas%20informaci%C3%B3n%20%20sobre%20el%20Centro%20Educativo."> '.get_field('whatsapp').'</a></p>';
 							}
 						if(get_field('email')){
-							echo '<p class="email" ><a class="bi bi-envelope-fill" href="mailto:'.get_field('email').'"> '.get_field('email').'</a></p>';
+							echo '<p class="email" ><a class="bi bi-envelope-fill" target="_blank" id="email_'.$title.'" href="mailto:'.get_field('email').'"> '.get_field('email').'</a></p>';
 							}// }//	}				
 						echo	'<div class="product-bottom-details">';
 										echo '<div class="product-price">';
 										if(get_field('link')){
-										echo '<a href="'.get_field('link').'?utm_source=pauta_pagada&utm_medium=ActualidadEducativa" target="_blank" class="sitioweb"><span class="bi bi-link-45deg"></span> Ir al sitio web</a>';
+						echo '<a href="'.get_field('link').'?utm_source=pauta_pagada&utm_medium=ActualidadEducativa" id="'.$title.'" target="_blank" class="sitioweb"><span class="bi bi-link-45deg"></span> Ir al sitio web</a>';
 											}
 										echo '</div>';
 											echo	'<div class="product-links">
@@ -39,5 +42,3 @@ $image = get_field('logo_centro');  //if(get_field('anunciante')== true){
 								</div>	
 			</div>
 </div></div>';
-
-

@@ -12,7 +12,7 @@
  * Plugin Name: AE Centros
  * Plugin URI:
  * Description: Directorio de centros educativos.
- * Version:     0.0.1
+ * Version:     0.0.2
  * Author:      Giancarlos Villalobos
  * Author URI:  http://gianko.com
  * Text Domain: Directorio de centros educativos
